@@ -15,6 +15,9 @@ public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
 
+private slots:
+    void on_openConfig_pbn_clicked();
+
 private:
     Ui::Widget *ui;
 };

@@ -13,3 +13,9 @@ Widget::~Widget()
     delete ui;
 }
 
+
+void Widget::on_openConfig_pbn_clicked()
+{
+
+}
+
