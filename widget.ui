@@ -6,229 +6,188 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>817</width>
-    <height>663</height>
+    <width>1055</width>
+    <height>725</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Widget</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(56, 74, 125);</string>
+   <string notr="true"/>
   </property>
-  <widget class="QPushButton" name="openConfig_pbn">
+  <widget class="QWidget" name="device_panel" native="true">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>590</y>
-     <width>131</width>
-     <height>51</height>
+     <x>10</x>
+     <y>10</y>
+     <width>321</width>
+     <height>701</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
+    <string notr="true">background-color: rgb(181, 181, 181);
+border-radius:15px;</string>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>icons/imac.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nameOfPc">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>10</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);
+font: 700 16pt &quot;Terminal&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="openConfig_pbn">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>120</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(156,156,156)
 </string>
-   </property>
-   <property name="text">
-    <string>Open config</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="createConfig_pbn">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>590</y>
-     <width>131</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
+    </property>
+    <property name="text">
+     <string>Open config</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="createConfig_pbn">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>160</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(156,156,156)
 </string>
-   </property>
-   <property name="text">
-    <string>Create config</string>
-   </property>
+    </property>
+    <property name="text">
+     <string>Create config</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="regedit_pbn">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>200</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(156,156,156)
+</string>
+    </property>
+    <property name="text">
+     <string>Regedit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="network_pbn">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>240</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(156,156,156)
+</string>
+    </property>
+    <property name="text">
+     <string>Network</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sys_pbn">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>280</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);
+border: 2px solid rgb(156,156,156)
+</string>
+    </property>
+    <property name="text">
+     <string>System tools</string>
+    </property>
+   </widget>
   </widget>
-  <widget class="QPushButton" name="regedit_pbn">
+  <widget class="QWidget" name="user_view_widget" native="true">
    <property name="geometry">
     <rect>
      <x>340</x>
-     <y>590</y>
-     <width>131</width>
-     <height>51</height>
+     <y>40</y>
+     <width>701</width>
+     <height>571</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-   </property>
-   <property name="text">
-    <string>Regedit</string>
+    <string notr="true">border-radius:15px;
+background-color: rgb(238, 238, 238);</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="network_pbn">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>590</y>
-     <width>131</width>
-     <height>51</height>
+     <x>600</x>
+     <y>10</y>
+     <width>181</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
+    <string notr="true">font: 700 16pt &quot;Terminal&quot;;
+color: rgb(0, 0, 0);</string>
    </property>
    <property name="text">
-    <string>Network</string>
+    <string>Processor scale</string>
    </property>
-  </widget>
-  <widget class="QPushButton" name="sys_pbn">
-   <property name="geometry">
-    <rect>
-     <x>660</x>
-     <y>590</y>
-     <width>131</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-   </property>
-   <property name="text">
-    <string>System tools</string>
-   </property>
-  </widget>
-  <widget class="QFrame" name="manConfig_frame">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>20</y>
-     <width>761</width>
-     <height>541</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true"/>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QPlainTextEdit" name="editorConf_txteditor">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>511</width>
-      <height>521</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 700 18pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="saveConf_btn">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>20</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-    </property>
-    <property name="text">
-     <string>Save</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="closeConf_btn">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>80</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-    </property>
-    <property name="text">
-     <string>Close</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="clearConf_btn">
-    <property name="geometry">
-     <rect>
-      <x>580</x>
-      <y>140</y>
-      <width>131</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">font: 700 16pt &quot;System&quot;;
-background-color: rgb(53, 30, 122);
-color: rgb(255, 255, 255);
-border-radius:10px;
-
-border:2px solid rgb(121, 181, 255);
-</string>
-    </property>
-    <property name="text">
-     <string>Clear</string>
-    </property>
-   </widget>
   </widget>
  </widget>
  <resources/>

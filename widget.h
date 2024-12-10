@@ -2,6 +2,8 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QFileDialog>
+#include "cpu_usage_graph.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -13,6 +15,7 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
+    QString *currentConfName;
     ~Widget();
 
 private slots:
@@ -20,5 +23,6 @@ private slots:
 
 private:
     Ui::Widget *ui;
+    CPUUsageGraph *cpuUsageGraph;
 };
 #endif // WIDGET_H
