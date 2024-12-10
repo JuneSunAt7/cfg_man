@@ -3,6 +3,11 @@
 
 #include <QWidget>
 #include <QFileDialog>
+#include <QPlainTextEdit>
+#include <QFile>
+#include <QTextStream>
+#include <QMessageBox>
+
 #include "cpu_usage_graph.h"
 
 QT_BEGIN_NAMESPACE
@@ -15,14 +20,23 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
-    QString *currentConfName;
+    QString currentConfName;
     ~Widget();
 
 private slots:
     void on_openConfig_pbn_clicked();
 
+    void on_saveConf_btn_clicked();
+
+    void on_saveConfAs_btn_clicked();
+
+    void on_closeConf_btn_clicked();
+
 private:
     Ui::Widget *ui;
     CPUUsageGraph *cpuUsageGraph;
+
+    void show_text_editor();
+    void read_to_editor();
 };
 #endif // WIDGET_H
