@@ -1,6 +1,7 @@
 #include "widget.h"
 #include "ui_widget.h"
 #include "get_data_of_pc.h"
+#include <filesystem_view.h>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -31,6 +32,7 @@ void Widget::on_openConfig_pbn_clicked()
     currentConfName = QFileDialog::getOpenFileName(this,
                                   tr("Open config file"), "", tr("All config files()"));
     cpuUsageGraph->setVisible(false);
+    treeFs->setVisible(false);
 
     show_text_editor();
 
@@ -95,6 +97,42 @@ void Widget::on_closeConf_btn_clicked()
     ui->editor->clear();
     ui->editor->setVisible(false);
     cpuUsageGraph->setVisible(true);
+    ui->label_2->setVisible(true);
 
+}
+
+
+void Widget::on_createConfig_pbn_clicked()
+{
+    cpuUsageGraph->setVisible(false);
+    treeFs->setVisible(false);
+    ui->label_2->setText("Create new config");
+
+    ui->saveConfAs_btn->setVisible(true);
+    ui->closeConf_btn->setVisible(true);
+
+    ui->editor->setVisible(true);
+}
+
+
+void Widget::on_filesys_pbn_clicked()
+{
+    ui->saveConf_btn->setVisible(false);
+    ui->saveConfAs_btn->setVisible(false);
+    ui->closeConf_btn->setVisible(false);
+
+    ui->editor->setVisible(false);
+
+    cpuUsageGraph->setVisible(false);
+       ui->label_2->setText("View FS");
+
+       // Если экземпляр еще не создан, создаем его
+       if (!treeFs) {
+           treeFs = new UserWidget(ui->user_view_widget); // Создаем экземпляр
+           treeFs->setGeometry(0, 0, ui->user_view_widget->width(), ui->user_view_widget->height());
+           treeFs->show(); // Показываем виджет
+       } else {
+           treeFs->setVisible(true); // Если уже существует, просто показываем его
+       }
 }
 

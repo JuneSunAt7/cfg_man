@@ -9,6 +9,7 @@
 #include <QMessageBox>
 
 #include "cpu_usage_graph.h"
+#include "filesystem_view.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -32,9 +33,14 @@ private slots:
 
     void on_closeConf_btn_clicked();
 
+    void on_createConfig_pbn_clicked();
+
+    void on_filesys_pbn_clicked();
+
 private:
     Ui::Widget *ui;
     CPUUsageGraph *cpuUsageGraph;
+    UserWidget *treeFs;
 
     void show_text_editor();
     void read_to_editor();

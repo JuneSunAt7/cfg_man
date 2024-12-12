@@ -20,6 +20,7 @@ public:
 private slots:
     void updateGraph();
 
+
 private:
     QGraphicsScene *scene;
     QTimer *timer;

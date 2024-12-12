@@ -100,7 +100,7 @@ border: 2px solid rgb(156,156,156)
      <string>Create config</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="regedit_pbn">
+   <widget class="QPushButton" name="filesys_pbn">
     <property name="geometry">
      <rect>
       <x>-10</x>
@@ -116,7 +116,7 @@ border: 2px solid rgb(156,156,156)
 </string>
     </property>
     <property name="text">
-     <string>Regedit</string>
+     <string>Filesystem</string>
     </property>
    </widget>
    <widget class="QPushButton" name="network_pbn">
@@ -190,9 +190,9 @@ font:700 18pt 'System';</string>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>600</x>
+     <x>400</x>
      <y>10</y>
-     <width>181</width>
+     <width>551</width>
      <height>21</height>
     </rect>
    </property>
